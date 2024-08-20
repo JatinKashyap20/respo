@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #e5533b;
+  color: black;
+  width: 100vw;
+}
+
+header .logo h1 {
+  font-size: 24px;
+}
+header nav {
+  flex-grow: 1; /* This allows the nav to take up available space */
+  display: flex;
+  justify-content: center; /* This centers the nav content horizontally */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Center the items vertically within the nav */
+  justify-content: center;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+header .menu-bar img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto;
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+@media (max-width: 768px) {
+  header nav ul {
+    display: none; /* Hide the regular navbar items */
+  }
+
+  header .menu-bar {
+    display: block; /* Show the menu bar icon */
+  }
+}
+
+/* Show the menu bar icon on smaller screens */
+
+/* Content and Image Section */
+.content-image-section {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 0px 20px 20px;
+  background-color: #f4f4f4;
+  height: 100vh;
+  width: 100vw;
+  margin-right: 10px;
+  background: linear-gradient(135deg, #fdf7c2, #fdc6ef);
+}
+
+.content-image-section .content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.content-image-section .content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-image-section .content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.content-image-section .content .click {
+  margin-top: 30px;
+}
+.content-image-section .content .btn {
+  background-color: #e5533b; /* Background color of the button */
+  padding: 10px 30px; /* Padding for vertical and horizontal spacing */
+  color: #fff; /* Text color */
+  text-decoration: none; /* No underline */
+  font-size: 18px; /* Font size */
+  /* Rounded corners */
+  width: 200px; /* Set a specific width */
+  text-align: center; /* Center text horizontally */
+  display: inline-block;
+}
+
+.content-image-section .content .btn:hover {
+  background-color: #cc4731;
+}
+
+.content-image-section .image {
+  flex: 1;
+  height: 100%;
+}
+
+.content-image-section .image img {
+  width: 100%;
+  height: 100%;
+}
+/* Image Grid Section */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  gap: 10px; /* Space between grid items */
+  padding: 60px;
+  background: linear-gradient(135deg, #fdf7c2, #fdc6ef);
+}
+
+.image-grid .col1,
+.image-grid .col2,
+.image-grid .col3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-grid .col1 img {
+  width: 100%;
+  height: 200px; /* Adjust this if needed */
+  margin-bottom: 10px;
+}
+
+.image-grid .col2 img {
+  width: 100%;
+  height: 410px; /* This makes the image span two rows */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.image-grid .col3 {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-grid .col3 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: orangered;
+  border: 1px solid lightcoral;
+  height: 50%;
+  padding: 16px;
+  font-weight: 300px;
+}
+.image-grid .col3 .column p {
+  font-weight: 10;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.image-grid .col3 .column h1 {
+  font-size: 40px;
+}
+#image {
+  font-size: small;
+  margin-top: -45px;
+  margin-left: 35px;
+}
